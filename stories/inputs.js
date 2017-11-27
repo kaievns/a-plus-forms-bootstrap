@@ -52,12 +52,6 @@ storiesOf('Inputs', module)
     <div>
       <Select label="T-shirt size" options={sizes} onChange={action('size changed')} />
       <Select label="Clerable select" clearable options={sizes} onChange={action('size changed')} />
-      <Select
-        label="Multiple select"
-        multiple
-        clearable
-        options={sizes}
-        onChange={action('size changed')}
-      />
+      <Select label="Multiple select" multiple options={sizes} onChange={action('size changed')} />
     </div>
   ));

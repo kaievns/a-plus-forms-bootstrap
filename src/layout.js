@@ -5,11 +5,11 @@ const randomId = () =>
     .toString(16)
     .slice(2, 8)}`;
 
-export default ({ label, error, input, help, id = randomId() }) => {
+export default ({ label, error, input, help, className, id = randomId() }) => {
   const isCheckbox = input.type.toString().includes('Checkbox');
 
   return (
-    <div className={`form-group${error ? ' has-error' : ''} row`}>
+    <div className={`form-group${error ? ' has-error' : ''} row ${className}`}>
       <label className="col-sm-3 control-label" htmlFor={id}>
         {isCheckbox ? null : label}
       </label>
