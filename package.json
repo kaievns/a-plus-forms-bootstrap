@@ -2,9 +2,21 @@
   "name": "a-plus-forms-bootstrap",
   "version": "1.0.0",
   "description": "Bootstrap bindings for the A+ forms",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "start-storybook -p 6006",
+    "build": "NODE_ENV=production babel src --out-dir dist/",
+    "precommit": "lint-staged",
+    "prepare": "npm run build"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -19,5 +31,28 @@
   "bugs": {
     "url": "https://github.com/MadRabbit/a-plus-forms-bootstrap/issues"
   },
-  "homepage": "https://github.com/MadRabbit/a-plus-forms-bootstrap#readme"
+  "homepage": "https://github.com/MadRabbit/a-plus-forms-bootstrap#readme",
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.16",
+    "@storybook/addon-links": "^3.2.16",
+    "@storybook/cli": "^3.2.16",
+    "@storybook/react": "^3.2.16",
+    "a-plus-forms": "^0.6.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "bootstrap": "^3.3.7",
+    "eslint-config-shortlyster": "^2.4.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1"
+  },
+  "peerDependencies": {
+    "a-plus-forms": "^0.6.2"
+  }
 }
