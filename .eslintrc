@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "extends": [
+    "shortlyster",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "rules": {
+  }
+}
