@@ -1,0 +1,23 @@
+{
+  "name": "a-plus-forms-bootstrap",
+  "version": "1.0.0",
+  "description": "Bootstrap bindings for the A+ forms",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MadRabbit/a-plus-forms-bootstrap.git"
+  },
+  "keywords": [
+    "forms",
+    "bootstrap"
+  ],
+  "author": "Nikolay Nemshilov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MadRabbit/a-plus-forms-bootstrap/issues"
+  },
+  "homepage": "https://github.com/MadRabbit/a-plus-forms-bootstrap#readme"
+}
